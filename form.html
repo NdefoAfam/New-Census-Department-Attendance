@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CENSUS DEPARTMENT</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source Serif Pro, serif:wght@300&display=swap" rel="stylesheet">
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Source Serif Pro', serif;
+      transition: all 0.4s ease;;
+  }
+  
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0; /* Optional: background color for the whole page */
+      font-family: 'Source Serif Pro', serif;
+    }
+
+    form {
+      padding: 25px;
+      background: #fff;
+      max-width: 500px;
+      width: 100%;
+      border-radius: 7px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    form h3 {
+      font-size: 27px;
+      margin: 0 0 30px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+
+    label {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 7px;
+  }
+
+    input,
+    select {
+      height: 45px;
+      padding: 10px;
+      width: 100%;
+      font-size: 15px;
+      outline: none;
+      background: #fff;
+      border-radius: 3px;
+      border: 1px solid #bfbfbf;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #9a9a9a;
+    }
+
+    input.error,
+    select.error {
+      border-color: #f91919;
+      background: #f9f0f1;
+    }
+
+    small {
+      font-size: 14px;
+      margin-top: 5px;
+      display: block;
+      color: #f91919;
+    }
+
+    .submit-btn {
+      margin-top: 30px;
+    }
+
+    .submit-btn input {
+      color: white;
+      border: none;
+      height: auto;
+      font-size: 16px;
+      padding: 13px 0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 500;
+      text-align: center;
+      background: #084718;
+      transition: 0.2s ease;
+      width: 100%;
+    }
+
+    .submit-btn input:hover {
+      background: #179b81;
+    }
+  </style>
+</head>
+<body>
+  <form action="thank-you.html">
+    <div class="hero-image">
+      <img src="image/Asset 82census.png" alt="Hero Image" style="width: 100%; height: auto; margin-top: 20rem;">
+    </div>
+    <br>
+    <h3>ATTENDANCE</h3>
+    <br>
+
+    <div class="location-info">
+      <label for="latitude" style="font-size: 13px;">Latitude: <span id="latitude"></span></label>
+    </div>
+    <br>
+
+    <div class="location-info">
+      <label for="longitude" style="font-size: 13px;">Longitude: <span id="longitude"></span></label>
+    </div>
+    <br>
+    <br>
+
+    <div class="form-group">
+      <label for="posting">Full Name</label>
+      <select id="posting">
+        <option value="" selected disabled>Select Name</option>
+   <option value="Male">Ag. Director Abubakar Bello Afegbua</option> 
+      <option value="Female">Abdullahi Abubakar
+      </option>
+      <option value="Male">Abubakar Aisha
+      </option> 
+      <option value="Female">Abubakar Muhammad Zayyad
+      </option>
+      <option value="Male">Achinonu Pamela
+      </option> 
+      <option value="Female">Adebayo Olayide Ajani
+      </option>
+      <option value="Female">Adesanya Oluwafemi Dayo
+      </option>
+      <option value="Male">Agabi Alhassan Yusuf
+      </option> 
+      <option value="Female">Aisaborhale Victor Emiohe
+      </option>
+      <option value="Male">Ajayi Oluwaseun
+      </option> 
+      <option value="Female">Ajayi Oluwatosin Esther
+      </option>
+      <option value="Male">Aliyu Taofeeq
+      </option> 
+      <option value="Female">Allah-Kayisafiyanu Safiyanu
+      </option>
+      <option value="Male">Bello Usman
+      </option> 
+      <option value="Female">Bukarmusa Alhaji
+      </option>
+      <option value="Male">Bulus Jonathan Bulus
+      </option> 
+      <option value="Female">Charlie Samuel Silas
+      </option>
+      <option value="Male">Danladi Chewazalo Juliet
+      </option> 
+      <option value="Female">Duru Emeka Jackline
+      </option>
+      <option value="Male">Ezeihekaibee Sylvia Chidumebi
+      </option> 
+      <option value="Female">Ezekwe Harrison Tabansi
+      </option>
+      <option value="Male">Gajimi Umar
+      </option> 
+      <option value="Female">Gurinsa'Adu Dahiru
+      </option>
+      <option value="Male">Hammed Titilayo Tawakalitu
+      </option> 
+      <option value="Female">Haruna Audu Falnyi
+      </option>
+      <option value="Female">Ibrahim Habibu Ibbi
+      </option>
+      <option value="Male">Ibrahim Yakubu  Aduku
+      </option> 
+      <option value="Female">Jalingo Inuwa Bakare
+      </option>
+      <option value="Male">Joseph Taye Oluwaseyi Taye
+      </option> 
+      <option value="Female">Kareem Olushola
+      </option>
+      <option value="Female">Madaki Abubakar
+      </option>
+      <option value="Male">Makinwa Paul Tobiloba
+      </option> 
+      <option value="Female">Mohammed Ahmed Wudini
+      </option>
+      <option value="Male">Muhammad Musa Shabbal
+      </option> 
+      <option value="Female">Sylvia Dumebi
+      </option>
+      <option value="Male">Musa Vincent Ogaji
+      </option> 
+      <option value="Female">Ndefo Afamefuna Nkemjika
+      </option>
+      <option value="Male">Nemieboka Amina Abigail
+      </option> 
+      <option value="Female">Njoku Benneth Chinedu
+      </option>
+      <option value="Male">Nteme Barbara Francis
+      </option> 
+      <option value="Female">Odela Joan Ame
+      </option>
+      <option value="Male">Odibo Aghogho P.
+      </option> 
+      <option value="Female">Ogbole Anthony
+      </option>
+      <option value="Male">Ogbu Emmanuel Chisom
+      </option> 
+      <option value="Female">Ogedegbe Josephine Ese
+      </option>
+      <option value="Male">Ogenyi Sandra
+      </option> 
+      <option value="Female">Ogidi Mary Oyiweche
+      </option>
+      <option value="Male">Oke Olayinka Oluwatosin
+      </option> 
+      <option value="Female">Olufadele Elizabeth Bose
+      </option>
+      <option value="Male">Omonijo Ibukunoluwa
+      </option> 
+      <option value="Female">Osunde Helen Ebosetale
+      </option>
+      <option value="Female">Oyibo Onyeiweanehi Violet
+      </option>
+      <option value="Male">Raymond -Sen Jinteno
+      </option> 
+      <option value="Female">Saleh Abubakar
+      </option>
+      <option value="Male">Sandra Henry
+      </option> 
+      <option value="Female">Shuaibu Mohammed Jamiu
+      </option>
+      <option value="Male">Solagbade Peter Oluwole
+      </option> 
+      <option value="Female">Tsakpa Adigizi Anthony
+      </option>
+      <option value="Male">Uchechukwu Ngozi Clara
+      </option> 
+      <option value="Female">Udem Gibson Chimezie
+      </option>
+      <option value="Male">Umeaniba Maureen
+      </option> 
+      <option value="Female">Usman  Halima Said
+      </option>
+      <option value="Male">Usman Saad
+      </option> 
+      <option value="Female">Yusuf Imran Musa
+      </option>
+    </select>
+  </div>
+  <!---<div class="form-group email">
+    <label >Grade Level</label>
+    <input type="text" placeholder="Enter your grade level">
+  </div>-->
+    
+
+    <div class="form-group">
+      <label for="currentTime">Attendance Time:</label>
+      <span id="currentTime"></span>
+    </div>
+    <br>
+
+    <div class="form-group">
+      <label for="time">Time</label>
+      <input type="text" id="time" placeholder="Current time" disabled>
+    </div>
+
+    <div class="form-group">
+      <label for="date">Date</label>
+      <input type="date" id="date" placeholder="Select your date" disabled>
+    </div>
+
+    <div class="form-group">
+      <label for="posting-location">Posting</label>
+      <select id="posting-location">
+        <option value="NPC Headquaters">NPC Headquaters</option>
+        <option value="NPC Wuye Office">NPC Wuye Office</option>
+      </select>
+    </div>
+
+    <div class="submit-btn">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+
+  <script src="script.js"></script>
+  <script src="script1.js"></script>
+  <script src="script2.js"></script>
+  <script src="script3.js"></script>
+  <script src="gpscript.js"></script>
+  <script src="thankyou.js"></script>
+
+</body>
+</html>
