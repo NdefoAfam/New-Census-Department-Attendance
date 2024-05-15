@@ -438,7 +438,7 @@ nav .nav-bar .logo a{
   
   .intro1 {
 	max-height: 100px;
-	padding: 17px;
+	padding: 22px;
 	box-sizing: border-box;
 	position: absolute;
 	bottom: 0;
@@ -534,14 +534,31 @@ nav .nav-bar .logo a{
     max-width: 1000px;
     width: 100%;
     font-size: 1rem;
-    background-color: var(--nav-color);
+    background-color: #1A374D;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+nav .nav-bar .logo a {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: -8r;
 }
+}
+
+@media screen and (max-width: 600px) {
+	.nav p {
+	  font-size: 15px;
+	  padding: 3px;
+	}
+  }
+
+  
   @media screen and (max-width: 768px) {
 	.container_two {
 	  margin-top: 10px; /* Adjusted margin-top for smaller screens */
@@ -617,7 +634,7 @@ nav .nav-bar .logo a{
         }
     
         h2{
-          font-size: 2rem
+          font-size: 1rem
         }
     
         h3{
@@ -1201,6 +1218,9 @@ form .password i {
   .hero-image img {
     /* Further adjustments for even smaller screens */
     max-width: 100%; /* For example, set the maximum width to 80% */
+  }
+  h2{
+	font-size: 20px;
   }
   form {
 	padding: 25px;
