@@ -27,6 +27,9 @@ body{
     padding: 0;
     color: #fff;
     width: 100%;
+    max-width: 1500px;
+    justify-content: center;
+    align-items: center;
 }
 .center {
   text-align: center;
@@ -74,7 +77,7 @@ nav{
     top: 0;
     left: 0;
     height: 70px;
-    width: 100%;
+    width: 150%;
     background-color: var(--nav-color);
     z-index: 100;
 }
@@ -102,7 +105,7 @@ body.dark nav{
 nav .nav-bar{
   position: relative;
   height: 100%;
-  max-width: 1000px;
+  max-width: 1500px;
   width: 100%;
   background-color: #1A374D;
   margin: 0 auto;
@@ -369,8 +372,8 @@ nav .nav-bar .logo a{
 .card1 {
   display: grid;
 	height: auto;
-	max-width: 270px;
-	margin: 20px;
+	max-width: 230px;
+  margin: 40px;
 	border-radius: 3px;
 	overflow: hidden;
 	box-shadow: 5px 5px 20px black;
@@ -438,12 +441,12 @@ nav .nav-bar .logo a{
   
   .intro1 {
 	max-height: 100px;
-	padding: 22px;
+	padding: 10px;
 	box-sizing: border-box;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	background:#1A374D;
+	background:#314154;
 	color: white;
 	transition: all 0.5s;
   }
@@ -460,16 +463,15 @@ nav .nav-bar .logo a{
 	transition: all 0.5s;
   }
   h1{
-	font-size: 4rem; 
+	font-size: 3.5rem; 
 	font-weight: 700; 
 	color: white; 
 	margin-top: 1rem;
   }
   
   h2 {
-	font-size: 50px;
+	font-size: 40px;
 	margin: 10px 0;
-  color: #000;
   }
   
   /*   *** Card hover effects starts***   */
