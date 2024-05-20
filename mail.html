@@ -115,20 +115,21 @@
     </style>
   </head>
   <body>
-    <form action="thank-you.html" style="margin-top: 20rem">
+    <form action="thank-you.html" style="margin-top: 25rem">
       <div class="hero-image">
         <img src="image/mail.png" style="margin-top: 13rem" />
       </div>
       <br />
       <div class="form-group fullname">
         <label for="">Reference ID</label>
-        <input type="text" id="" placeholder="Enter your Address" />
+        <input type="text" id="" placeholder="Enter issue no. of issuing dept." />
       </div>
       <div class="form-group posting">
-        <label for="posting">Department</label>
+        <label for="posting">DEPARTMENT</label>
         <select id="posting">
           <option value="" selected disabled>Select Department</option>
-          <option value="Male">Office of the DG</option>
+          <option value="Male">Office of The Chairman</option>
+          <option value="Male">Office of The DG</option>
           <option value="Female">Cartography Department</option>
           <option value="Male">Population Management</option>
           <option value="Female">General Services</option>
@@ -147,11 +148,12 @@
           <option value="Female">Account Department</option>
           <option value="Male">ICT Department</option>
           <option value="Female">Special Duties Department</option>
+          <option value="Female">Other</option>
         </select>
       </div>
       <div class="form-group fullname">
-        <label for="">File Name</label>
-        <input type="text" id="" placeholder="Enter your Address" />
+        <label for="">DATE OF RECEIPT</label>
+        <input type="text" id="" placeholder="Enter date of receipt" />
       </div>
       <div class="form-group posting">
         <label for="posting">Category</label>
@@ -162,7 +164,7 @@
         </select>
       </div>
 
-      <div class="form-group posting">
+      <!---<div class="form-group posting">
         <label for="posting">State</label>
         <select id="posting">
           <option value="" selected disabled>Select State</option>
@@ -213,17 +215,24 @@
         <select id="lga" name="lga">
           <option value="" selected disabled>Select LGA</option>
       </select>      
-    </div>-->
+    </div>
 
       <div class="form-group fullname">
         <label for="">LGA</label>
         <input type="text" id="" placeholder="Enter LGA" />
-      </div>
+      </div>-->
 
       <div class="form-group fullname">
-        <label for="">Mail Topic</label>
-        <input type="text" id="" placeholder="Enter your Address" />
+        <label for="">WHO FROM</label>
+        <input type="text" id="" placeholder="Enter who mail is coming from" />
       </div>
+
+      <div class="request-box">
+        <form action="submit_request.php" method="post">
+          <label for="user_request">Explain your request:</label>
+          <textarea id="user_request" name="user_request" placeholder="Enter Subject matter and Folio"></textarea>   
+      </div>
+
       <div class="form-group date">
         <label for="date">Mail Date</label>
         <input type="date" id="date" placeholder="Select your date" disabled />
