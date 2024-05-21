@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Source Serif Pro, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0eff6;
+        }
+
+        nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 70px;
+            width: 100%;
+            background-color: var(--nav-color);
+            z-index: 100;
+        }
+
+        nav .nav-bar{
+            position: relative;
+            height: 100%;
+            max-width: 1500px;
+            width: 100%;
+            background-color: #1A374D;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
+          
+          nav .nav-bar .sidebarOpen{
+            color: var(--text-color);
+            font-size: 25px;
+            padding: 5px;
+            cursor: pointer;
+            display: none;
+          }
+          
+          nav .nav-bar .logo a{
+            font-size: 25px;
+            font-weight: 500;
+            color: var(--text-color);
+            text-decoration: none;
+            margin-left: -8r;
+          }
+          
+          .menu .logo-toggle{
+            display: none;
+          }
+          
+          .nav-bar .nav-links{
+            display: flex;
+            align-items: center;
+          }
+          
+          .nav-bar .nav-links li{
+            margin: 0 5px;
+            list-style: none;
+          }
+          
+          .nav-links li a{
+            position: relative;
+            font-size: 17px;
+            font-weight: 400;
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 3px;
+          }
+          
+          .nav-links li a::before{
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: var(--text-color);
+            opacity: 0;
+            transition: all 0.3s ease;
+          }
+          
+          .nav-links li:hover a::before{
+            opacity: 1;
+          }
+          
+          .nav-bar .darkLight-searchBox{
+            display: flex;
+            align-items: center;
+          }
+        
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .heading-primary {
+            color: black;
+            text-align: center;
+            font-weight: 35px;
+        }
+        
+        .heading-secondary {
+            color: black;
+            font-size: 25px;
+            font-weight: 200;
+            margin: 0 2rem;
+            text-align: center;
+        }
+        
+        .document-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        
+        .document-table th, .document-table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        
+        .document-table th {
+            background-color: #f2f2f2;
+        }
+        
+        .document-table td a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .document-table td a:hover {
+            text-decoration: underline;
+        }
+
+        footer .bottom-details{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          width: 100%;
+      
+        }
+        footer .bottom-details .bottom_text{
+          max-width: 1250px;
+          margin: auto;
+          padding: 20px 40px;
+          display: flex;
+          justify-content: space-between;
+        }
+        .bottom-details .bottom_text span,
+        .bottom-details .bottom_text a{
+          font-size: 14px;
+          font-weight: 300;
+          color: #fff;
+          opacity: 0.8;
+          text-decoration: none;
+        }
+        .bottom-details .bottom_text a:hover{
+          opacity: 1;
+          text-decoration: underline;
+        }
+        .bottom-details .bottom_text a{
+          margin-right: 10px;
+        }
+        
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .heading-secondary {
+                font-size: 18px;
+                margin: 0 1rem;
+            }
+        
+            .container {
+                width: 95%;
+                padding: 1rem;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span class="logo navLogo" style="color: #e0eff6; align-items:center"><a href="#">CENSUS DEPARTMENT</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#">CENSUS DEPARTMENT</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>    
+            </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="heading-primary">Document Management System</h2>
+        <h3 class="heading-secondary">Download backend documents in Excel format</h3>
+        
+        <table class="document-table">
+            <thead>
+                <tr>
+                    <th>Document Name</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example rows, replace with server-side generated rows -->
+                <tr>
+                    <td>Document 1</td>
+                    <td><a href="/path/to/document1.xlsx" download="document1.xlsx">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Document 2</td>
+                    <td><a href="/path/to/document2.xlsx" download="document2.xlsx">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Document 3</td>
+                    <td><a href="/path/to/document1.xlsx" download="document1.xlsx">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Document 4</td>
+                    <td><a href="/path/to/document2.xlsx" download="document2.xlsx">Download</a></td>
+                </tr> <tr>
+                    <td>Document 5</td>
+                    <td><a href="/path/to/document1.xlsx" download="document1.xlsx">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Document 6</td>
+                    <td><a href="/path/to/document2.xlsx" download="document2.xlsx">Download</a></td>
+                </tr> <tr>
+                    <td>Document 7</td>
+                    <td><a href="/path/to/document1.xlsx" download="document1.xlsx">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Document 8</td>
+                    <td><a href="/path/to/document2.xlsx" download="document2.xlsx">Download</a></td>
+                </tr> <tr>
+                    <td>Document 9</td>
+                    <td><a href="/path/to/document1.xlsx" download="document1.xlsx">Download</a></td>
+                </tr>
+                <tr>
+                    <td>Document 10</td>
+                    <td><a href="/path/to/document2.xlsx" download="document2.xlsx">Download</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+			
+        <div class="bottom-details">
+          <div class="bottom_text">
+            
+            <span class="policy_terms">
+              <a href="#" style="color: rgb(69, 61, 61);">Copyright © 2024 Census Department @ National Population Commission.</a>
+              <a href="#" style="color: rgb(69, 61, 61);">Developed by Census Department Technical Team</a>
+            </span>
+          </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
