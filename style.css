@@ -550,6 +550,13 @@ nav .nav-bar .logo a{
     justify-content: space-between;
 }
 
+.headings{
+  color: black;
+    font-size: 25px;
+    font-weight: 200;
+   
+}
+
 nav .nav-bar .logo a {
     font-size: 15px;
     font-weight: 500;
@@ -892,6 +899,13 @@ nav .nav-bar .logo a {
             color: #fff;
             font-size: 1.5rem;
           }
+
+          @media (max-width: 600px) {
+            body {
+                margin: 0 1rem; /* Reduces the space at the ends of the screen */
+                font-size: 14px; /* Reduces the font size */
+            }
+        }
         
       
             
